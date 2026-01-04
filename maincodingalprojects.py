@@ -350,3 +350,62 @@ def calculator():
         t3.insert(tk.END, str(note4000))
     except ValueError:
         messagebox.showerror("Error")
+
+
+#Tkinter Widgets
+from tkinter import *
+from PIL import Image, ImageTk
+
+root = Tk()
+root.title('image')
+root.geometry('400x400')
+
+upload = Image.open("carousel1.jpeg")
+
+image = ImageTk.PhotoImage(upload)
+
+label = Label(root, image=image, height=350, width=300)
+label.place(x=50, y=0)
+label2 = Label(root, text="This is how you add an image in a Tkinter Window")
+label2.place(x=40, y=360)
+
+root.mainloop()
+
+#Activity-2
+from tkinter import *
+from tkinter import messagebox
+
+root = Tk()
+root.geometry("200x200")
+
+def msg():
+    messagebox.showwarning("Alert", "Stop! A virus has been detected.")
+
+button = Button(root, text="Scane for virus", command=msg)
+button.place(x=40, y=80)
+
+root.mainloop()
+
+#Activity-3
+
+from tkinter import *
+
+root = Tk()
+root.geometry("400x300")
+root.title("main")
+
+def topwin():
+    top = Toplevel()
+    top.geometry("180x100")
+    top.title("toplevel")
+
+    l2 = Label(top, text = "This is toplevel window")
+    l2.pack()
+
+    top.mainloop()
+
+l = Label(root, text = "This is a root window")
+btn = Button(root, text = "Click here to open another window", command = topwin)
+
+l.pack()
+btn.pack()
