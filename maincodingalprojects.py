@@ -440,5 +440,5 @@ def ONSquareTime(n):
             iteration+=1
         print("")
     print("the number of iteration is:", iteration)
-ONSquareTime(4)
+ONSquareTime(2)
 
