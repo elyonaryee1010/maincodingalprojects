@@ -155,24 +155,45 @@
 #     print(result)
 
 #LoopTime assignment
-def myfunction(n):
-    for i in range(0,n+1):
-        print("First Loop")
+# def myfunction(n):
+#     for i in range(0,n+1):
+#         print("First Loop")
  
-    j=1
-    while(j<=n+1):
-        print("Second Loop ",j)
-        j=j*2
+#     j=1
+#     while(j<=n+1):
+#         print("Second Loop ",j)
+#         j=j*2
  
-    for i in range(0,100):
-        print("Third loop")
+#     for i in range(0,100):
+#         print("Third loop")
 
-print("\n[My time and complexity analysis]")
-print("Loop 1: O(n)")
-print("Loop 2: 0(log n)")
-print("Loop 3: 0(1)")
-print("Total Time complexity: 0(n)")
+# print("\n[My time and complexity analysis]")
+# print("Loop 1: O(n)")
+# print("Loop 2: 0(log n)")
+# print("Loop 3: 0(1)")
+# print("Total Time complexity: 0(n)")
 
-myfunction = (3)
+# myfunction = (3)
 
-#RecursionTimeComplexity
+#Shubhangi assignment
+def myfunction1(n):
+    if(n>0):
+        return
+    for i in range (0,n+1):
+        print("Codingal")
+    myfunction1(n/2)
+    myfunction1(n/3)
+
+print("Space: 0(log n)")
+
+#Shubhangi assignment 2
+def myfunction2(n):
+    if(n<=1):
+        return
+    print("Codingal")
+    myfunction2(n-1)
+
+print("Space: 0(n)")
+
+
+
