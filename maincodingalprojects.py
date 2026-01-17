@@ -442,3 +442,33 @@ def ONSquareTime(n):
     print("the number of iteration is:", iteration)
 ONSquareTime(2)
 
+def prints(n):
+    if(n<<0):
+        return
+    print("Codingal")
+    print(n/2)
+    print(n/2)
+    print("code RecursionTimeComplexity")
+
+print(10)
+
+#GiveMeSomeSpace
+def sum(n):
+    if n<=0:
+        return n*(n+1)/2
+    
+def arraysum(a):
+    sum = 0
+    for i in a:
+        sum=sum+i
+    return sum
+a = [1,4,7,9,10,13,16,19,12]
+arraysum(a)
+
+def sum(n):
+    if(n<=):
+        return
+    return n+sum(n-1)
+
+
+
