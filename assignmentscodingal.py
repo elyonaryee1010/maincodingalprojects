@@ -194,7 +194,7 @@ def myfunction2(n):
     myfunction2(n-1)
 
 #Binary to Decimal
-binary = 1011
+binary = int(input("Enter binary number"))
 decimal = 0
 power = 1
 
@@ -205,8 +205,4 @@ while binary > 0:
     power = power*2
 
 print("Decimal is:", decimal)
-
-print("Space: 0(n)")
-
-
 
