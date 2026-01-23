@@ -470,5 +470,62 @@ def sum(n):
         return
     return n+sum(n-1)
 
+#"StrongArms" project
+number = 200
+print("number is:", number)
+digits=len(str(number))
+print("digits is:", digits)
+result=0
+temp=number
+while temp>0:
+    digit=temp%10
+    result+=digit**digits
+    temp//=10
+if number==result:
+    print("number is armstrong")
+else:
+    print("number isn't armstrong")
+
+#Activity-2
+def print_factors(number):
+    print("the factors are:")
+    for i in range(1, number+1):
+        if number%i==0:
+            print(i)
+number = int(input("Number:"))
+print_factors(number)
+
+#Activity-3
+def int_to_roman(number):
+    val = [
+        1000,900,500,400,
+        100,90,50,40,
+        10,9,5,4,
+        1
+    ]
+    syb = [
+        "M", "CM", "D", "CD",
+        "C", "XC", "L", "XL",
+        "X", "IX", "V", "IV",
+        "I"
+    ]
+    roman_num = ''
+    i = 0
+    while number>0:
+        for _ in range(number // val[i]):
+            roman_num += syb[i]
+            number -= val[i]
+        i += 1
+        return roman_num
+    print("{} in Roman Numerals is {}".format(200, int_to_roman(200)))
+    
+
+
+
+
+
+
+
+
 
 
