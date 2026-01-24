@@ -206,3 +206,21 @@ while binary > 0:
 
 print("Decimal is:", decimal)
 
+#LCM CHECKER
+
+a = int(input("Enter you 1st numer"))
+b = int(input("Enter your 2nd number"))
+
+if a > b:
+    lcm = a
+else:
+    lcm = b
+
+while True:
+    if lcm % a==0 and lcm % b==0:
+    print("The LCM is:", lcm)
+    break
+
+lcm+=1
+
+
