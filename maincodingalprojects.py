@@ -518,6 +518,53 @@ def int_to_roman(number):
         i += 1
         return roman_num
     print("{} in Roman Numerals is {}".format(200, int_to_roman(200)))
+
+            #Palindrome Number
+num = int(input("Enter your number"))
+
+original = num 
+reversed_num = 0
+
+while num>0:
+    digit = num%10
+    reversed_num = (reversed_num*10) + digit
+    n//= 10
+
+if original == reversed_num:
+    print("It's palindrome")
+else:
+    print("it's not palindrome")
+
+
+
+
+
+
+
+
+
+    
+
+#GCD/HCF Code
+largest_num = int(input("Enter your biggest sum"))
+smallest_num = int(input("Enter your smallest sum:"))
+
+while(smallest_sum):
+    smallest_num = largest_num%smallest_num
+    numStore = smallest_num
+    largest_num = numStore
+
+
+print(f" GCD / HCF is: {largest_num}")
+
+    
+
+
+    
+
+
+
+
     
 
 
