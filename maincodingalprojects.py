@@ -411,168 +411,210 @@
 # btn.pack()
 
 #Asymptotic Notation
-def printnumber(n):
-    iteration=0
-    print("The number the user entered is:", n)
-    iteration+=1
-    print("the number of iteration is:", iteration)
+# def printnumber(n):
+#     iteration=0
+#     print("The number the user entered is:", n)
+#     iteration+=1
+#     print("the number of iteration is:", iteration)
 
-printnumber(10)
-printnumber(20)
+# printnumber(10)
+# printnumber(20)
 
-#Activity-2
-def OnTime(n):
-    iteration=0
-    for i in range(1, n+1):
-        iteration+=1
-        print("The Number of iteration is:", iteration)
+# #Activity-2
+# def OnTime(n):
+#     iteration=0
+#     for i in range(1, n+1):
+#         iteration+=1
+#         print("The Number of iteration is:", iteration)
 
-OnTime(4)
-#  OnTime(20)
-# OnTime(42)
+# OnTime(4)
+# #  OnTime(20)
+# # OnTime(42)
 
-#Activity-3
-def ONSquareTime(n):
-    iteration=0
-    for i in range(0,n):
-        for j in range(0, n):
-            print("#", end="")
-            iteration+=1
-        print("")
-    print("the number of iteration is:", iteration)
-ONSquareTime(2)
+# #Activity-3
+# def ONSquareTime(n):
+#     iteration=0
+#     for i in range(0,n):
+#         for j in range(0, n):
+#             print("#", end="")
+#             iteration+=1
+#         print("")
+#     print("the number of iteration is:", iteration)
+# ONSquareTime(2)
 
-def prints(n):
-    if(n<<0):
-        return
-    print("Codingal")
-    print(n/2)
-    print(n/2)
-    print("code RecursionTimeComplexity")
+# def prints(n):
+#     if(n<<0):
+#         return
+#     print("Codingal")
+#     print(n/2)
+#     print(n/2)
+#     print("code RecursionTimeComplexity")
 
-print(10)
+# print(10)
 
-#GiveMeSomeSpace
-def sum(n):
-    if n<=0:
-        return n*(n+1)/2
+# #GiveMeSomeSpace
+# def sum(n):
+#     if n<=0:
+#         return n*(n+1)/2
     
-def arraysum(a):
-    sum = 0
-    for i in a:
-        sum=sum+i
-    return sum
-a = [1,4,7,9,10,13,16,19,12]
-arraysum(a)
+# def arraysum(a):
+#     sum = 0
+#     for i in a:
+#         sum=sum+i
+#     return sum
+# a = [1,4,7,9,10,13,16,19,12]
+# arraysum(a)
 
-def sum(n):
-    if(n<=):
-        return
-    return n+sum(n-1)
+# def sum(n):
+#     if(n<=):
+#         return
+#     return n+sum(n-1)
 
-#"StrongArms" project
-number = 200
-print("number is:", number)
-digits=len(str(number))
-print("digits is:", digits)
-result=0
-temp=number
-while temp>0:
-    digit=temp%10
-    result+=digit**digits
-    temp//=10
-if number==result:
-    print("number is armstrong")
-else:
-    print("number isn't armstrong")
+# #"StrongArms" project
+# number = 200
+# print("number is:", number)
+# digits=len(str(number))
+# print("digits is:", digits)
+# result=0
+# temp=number
+# while temp>0:
+#     digit=temp%10
+#     result+=digit**digits
+#     temp//=10
+# if number==result:
+#     print("number is armstrong")
+# else:
+#     print("number isn't armstrong")
 
-#Activity-2
-def print_factors(number):
-    print("the factors are:")
-    for i in range(1, number+1):
-        if number%i==0:
-            print(i)
-number = int(input("Number:"))
-print_factors(number)
+# #Activity-2
+# def print_factors(number):
+#     print("the factors are:")
+#     for i in range(1, number+1):
+#         if number%i==0:
+#             print(i)
+# number = int(input("Number:"))
+# print_factors(number)
 
-#Activity-3
-def int_to_roman(number):
-    val = [
-        1000,900,500,400,
-        100,90,50,40,
-        10,9,5,4,
-        1
-    ]
-    syb = [
-        "M", "CM", "D", "CD",
-        "C", "XC", "L", "XL",
-        "X", "IX", "V", "IV",
-        "I"
-    ]
-    roman_num = ''
-    i = 0
-    while number>0:
-        for _ in range(number // val[i]):
-            roman_num += syb[i]
-            number -= val[i]
-        i += 1
-        return roman_num
-    print("{} in Roman Numerals is {}".format(200, int_to_roman(200)))
+# #Activity-3
+# def int_to_roman(number):
+#     val = [
+#         1000,900,500,400,
+#         100,90,50,40,
+#         10,9,5,4,
+#         1
+#     ]
+#     syb = [
+#         "M", "CM", "D", "CD",
+#         "C", "XC", "L", "XL",
+#         "X", "IX", "V", "IV",
+#         "I"
+#     ]
+#     roman_num = ''
+#     i = 0
+#     while number>0:
+#         for _ in range(number // val[i]):
+#             roman_num += syb[i]
+#             number -= val[i]
+#         i += 1
+#         return roman_num
+#     print("{} in Roman Numerals is {}".format(200, int_to_roman(200)))
 
-            #Palindrome Number
-num = int(input("Enter your number"))
+# #Palindrome Number
+# num = int(input("Enter your number"))
 
-original = num 
-reversed_num = 0
+# original = num 
+# reversed_num = 0
 
-while num>0:
-    digit = num%10
-    reversed_num = (reversed_num*10) + digit
-    num//= 10
+# while num>0:
+#     digit = num%10
+#     reversed_num = (reversed_num*10) + digit
+#     num//= 10
 
-if original == reversed_num:
-    print("It's palindrome")
-else:
-    print("it's not palindrome")
-
-
+# if original == reversed_num:
+#     print("It's palindrome")
+# else:
+#     print("it's not palindrome")
 
 
 
 
 
-
-
-    
-
-#GCD/HCF Code
-largest_num = int(input("Enter your biggest sum"))
-smallest_num = int(input("Enter your smallest sum:"))
-
-while(smallest_sum):
-    smallest_num = largest_num%smallest_num
-    numStore = smallest_num
-    largest_num = numStore
-
-
-print(f" GCD / HCF is: {largest_num}")
-
-    
-
-
-    
 
 
 
 
     
 
+# #GCD/HCF Code
+# largest_num = int(input("Enter your biggest sum"))
+# smallest_num = int(input("Enter your smallest sum:"))
+
+# while(smallest_sum):
+#     smallest_num = largest_num%smallest_num
+#     numStore = smallest_num
+#     largest_num = numStore
+
+
+# print(f" GCD / HCF is: {largest_num}")
+
+#Find a prime number
+from math import sqrt
+
+number = (input("Enter your number"))
+print("\n")
+
+if number>1:
+    for i in range(2, int(sqrt(number))+1):
+
+        if (number % 1) == 0:
+            print("number is not a prime number", number)
+            break
+        else:
+            print("number is prime", number)
+
+#Sieve of Eratosthenes
+def SieveOfEratosthenes(num):
+    prime = [True for i in range(num+1)]
+    p = 2
+    while (p*p <= num):
+        if (prime[p] == True):
+            for i in range(p*p, num+1, p):
+                prime[i] = False
+        p+=1
+    for p in range(2, num+1):
+        if prime[p]:
+            print(p, end="")
+num = int(input("Enter a number"))
+SieveOfEratosthenes(num)
+print("number is a prime number")
+
+#"Loveyou3000"
+a=3000
+for num in range(1, a+1):
+    c=0
+    rev=0
+    temp=num
+    for i in range(1, temp+1):
+        if temp%1 == 0:
+            c+=1
+        if c==2:
+            while temp>0:
+                rev = rev*10+(temp%10)
+                temp//= 10
+            if num==rev:
+                print(num, end="")
+             
+            
+        
 
 
 
 
 
+    
 
+
+    
 
 
 
