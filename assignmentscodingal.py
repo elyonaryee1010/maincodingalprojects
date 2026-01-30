@@ -1,3 +1,4 @@
+
 # #Activity-1
 # import turtle
 # turtle.Screen().bgcolor("orange")
@@ -176,22 +177,24 @@
 # myfunction = (3)
 
 #Shubhangi assignment
-def myfunction1(n):
-    if(n>0):
-        return
-    for i in range (0,n+1):
-        print("Codingal")
-    myfunction1(n/2)
-    myfunction1(n/3)
+# def myfunction1(n):
+#     if(n>0):
+#         return
+#     for i in range (0,n+1):
+#         print("Codingal")
+#     myfunction1(n/2)
+#     myfunction1(n/3)
 
-print("Space: 0(log n)")
+# print("Space: 0(log n)")
 
-#Shubhangi assignment 2
-def myfunction2(n):
-    if(n<=1):
-        return
-    print("Codingal")
-    myfunction2(n-1)
+# #Shubhangi assignment 2
+# def myfunction2(n):
+#     if(n<=1):
+#         return
+#     print("Codingal")
+#     myfunction2(n-1)
+
+# print("Space: 0(n)")
 
 #Binary to Decimal
 binary = int(input("Enter binary number"))
@@ -222,5 +225,19 @@ while True:
     break
 
 lcm+=1
+
+#Finding the prime
+for p in range(10,100):
+    is_prime = True
+    
+    for i in range(2, p):
+        if p % i == 0:
+            is_prime = False
+            
+    if is_prime:
+        print(p)
+            
+
+
 
 
