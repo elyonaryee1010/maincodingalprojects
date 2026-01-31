@@ -236,6 +236,21 @@ for p in range(10,100):
             
     if is_prime:
         print(p)
+
+
+#Circuits
+def solve_my_circuit(A, B,C):
+    top_output = A&B
+    middle_or_output = B | C
+
+    bottom_output = B & C
+
+    middle_and_output = middle_or_output & bottom_output
+
+    Q = top_output | middle_and_output
+
+    return Q
+
             
 
 
