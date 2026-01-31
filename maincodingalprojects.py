@@ -558,51 +558,89 @@
 # print(f" GCD / HCF is: {largest_num}")
 
 #Find a prime number
-from math import sqrt
+# from math import sqrt
 
-number = (input("Enter your number"))
-print("\n")
+# number = (input("Enter your number"))
+# print("\n")
 
-if number>1:
-    for i in range(2, int(sqrt(number))+1):
+# if number>1:
+#     for i in range(2, int(sqrt(number))+1):
 
-        if (number % 1) == 0:
-            print("number is not a prime number", number)
-            break
-        else:
-            print("number is prime", number)
+#         if (number % 1) == 0:
+#             print("number is not a prime number", number)
+#             break
+#         else:
+#             print("number is prime", number)
 
-#Sieve of Eratosthenes
-def SieveOfEratosthenes(num):
-    prime = [True for i in range(num+1)]
-    p = 2
-    while (p*p <= num):
-        if (prime[p] == True):
-            for i in range(p*p, num+1, p):
-                prime[i] = False
-        p+=1
-    for p in range(2, num+1):
-        if prime[p]:
-            print(p, end="")
-num = int(input("Enter a number"))
-SieveOfEratosthenes(num)
-print("number is a prime number")
+# #Sieve of Eratosthenes
+# def SieveOfEratosthenes(num):
+#     prime = [True for i in range(num+1)]
+#     p = 2
+#     while (p*p <= num):
+#         if (prime[p] == True):
+#             for i in range(p*p, num+1, p):
+#                 prime[i] = False
+#         p+=1
+#     for p in range(2, num+1):
+#         if prime[p]:
+#             print(p, end="")
+# num = int(input("Enter a number"))
+# SieveOfEratosthenes(num)
+# print("number is a prime number")
 
-#"Loveyou3000"
-a=3000
-for num in range(1, a+1):
-    c=0
-    rev=0
-    temp=num
-    for i in range(1, temp+1):
-        if temp%1 == 0:
-            c+=1
-        if c==2:
-            while temp>0:
-                rev = rev*10+(temp%10)
-                temp//= 10
-            if num==rev:
-                print(num, end="")
+# #"Loveyou3000"
+# a=3000
+# for num in range(1, a+1):
+#     c=0
+#     rev=0
+#     temp=num
+#     for i in range(1, temp+1):
+#         if temp%1 == 0:
+#             c+=1
+#         if c==2:
+#             while temp>0:
+#                 rev = rev*10+(temp%10)
+#                 temp//= 10
+#             if num==rev:
+#                 print(num, end="")
+
+#bit1
+num1 = 10
+num2 = 4
+print("num1 & num2 is:", num1 & num2)
+print("num1 | num2 is :", num1 | num2)
+print("num1 ^ num2 is:", num1 ^ num2)
+print("num1 << num2 is:", num1 << num2)
+print("num1 >> num2", num1 >> num2)
+
+#bit2
+def isEvenOdd(n):
+    if(n^1 == n+1):
+        return True
+    else:
+        return False
+number = int(input("Enter number:"))
+if(isEvenOdd(number)):
+    print("even")
+else:
+    print("Odd")
+
+#bit 3
+def number0fBits(n):
+
+    count = 0 
+
+while (n):
+    count += 1
+    n>>>==1
+
+return count
+num = int(input("Enter your number:"))
+
+print("Total bits:", numberOfBits(number))
+
+
+
              
             
         
