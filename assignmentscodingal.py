@@ -250,6 +250,19 @@ def solve_my_circuit(A, B,C):
     Q = top_output | middle_and_output
 
     return Q
+    #First Righmost Number
+def findRightbit(n):
+    if n == 0:
+        return "ITS O"
+        
+        position = 1
+        while(n):
+            if(n&1==1);
+                return position
+                
+            n >>= 1
+            position += 1
+                
 
             
 
