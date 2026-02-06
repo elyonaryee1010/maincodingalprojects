@@ -605,39 +605,75 @@
 #                 print(num, end="")
 
 #bit1
-num1 = 10
-num2 = 4
-print("num1 & num2 is:", num1 & num2)
-print("num1 | num2 is :", num1 | num2)
-print("num1 ^ num2 is:", num1 ^ num2)
-print("num1 << num2 is:", num1 << num2)
-print("num1 >> num2", num1 >> num2)
+# num1 = 10
+# num2 = 4
+# print("num1 & num2 is:", num1 & num2)
+# print("num1 | num2 is :", num1 | num2)
+# print("num1 ^ num2 is:", num1 ^ num2)
+# print("num1 << num2 is:", num1 << num2)
+# print("num1 >> num2", num1 >> num2)
 
-#bit2
-def isEvenOdd(n):
-    if(n^1 == n+1):
-        return True
+# #bit2
+# def isEvenOdd(n):
+#     if(n^1 == n+1):
+#         return True
+#     else:
+#         return False
+# number = int(input("Enter number:"))
+# if(isEvenOdd(number)):
+#     print("even")
+# else:
+#     print("Odd")
+
+# #bit 3
+# def number0fBits(n):
+
+#     count = 0 
+
+# while (n):
+#     count += 1
+#     n>>>==1
+
+# return count
+# num = int(input("Enter your number:"))
+
+# print("Total bits:", numberOfBits(number))
+#Number of Bits
+def numberOfBits(n):
+    zeros = 0
+    ones = 0
+    while(n):
+        if (n&1 == 1):
+            zeros += 1
+        else:
+            ones += 1
+
+    n>>=1
+
+print(f"Number is {ones} number is {zeros}")
+
+numberOfBits(n)
+
+#Set or not?
+def setOrnot(number, n):
+    if number & (1<<(n-1)):
+        print("SET")
     else:
-        return False
-number = int(input("Enter number:"))
-if(isEvenOdd(number)):
-    print("even")
-else:
-    print("Odd")
+        print("NOT A SET")
 
-#bit 3
-def number0fBits(n):
+n = int(input("Enter number:"))
+number = int(input("Enter number"))
+setOrnot(number, n)
 
-    count = 0 
 
-while (n):
-    count += 1
-    n>>>==1
+    
 
-return count
-num = int(input("Enter your number:"))
+    
+   
 
-print("Total bits:", numberOfBits(number))
+
+
+
 
 
 
@@ -653,6 +689,10 @@ print("Total bits:", numberOfBits(number))
 
 
     
+
+
+
+
 
 
 
