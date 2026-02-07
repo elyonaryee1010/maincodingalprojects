@@ -262,6 +262,20 @@ def findRightbit(n):
                 
             n >>= 1
             position += 1
+
+SUHANGI reverse
+def reverse_bit(n):
+    result = 0
+    while n>0:
+        result = (result << 1) | (n&1)
+
+        n = n>>1
+    return result
+
+num = int(input("Enter you number:"))
+print("reversed number:", reverse_bits(num))
+                
+
                 
 
             
