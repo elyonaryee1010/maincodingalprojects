@@ -665,6 +665,53 @@ n = int(input("Enter number:"))
 number = int(input("Enter number"))
 setOrnot(number, n)
 
+#Activity-1
+def checkIfSame(number1, number2):
+    if((number1 ^ number2)!=0):
+        print("numbers are not the same")
+    else:
+        print("numbers are the same")
+number1 = int(input("Enter a number:"))
+num2 = int(input("Enter a number"))
+checkIfSame(number1, number 2)
+
+#Activity-2
+def oddOccuring(arr):
+    res = 0
+    for i in arr:
+        res = res^i
+        return res
+arr = []
+n= int(Input("Enter the size of your number"))
+while(n):
+    num= int(input("Enter the element:"))
+    arr.append(num)
+    n-=1
+print("Odd occuring element is", oddOccuring(arr))
+
+#Activity-3
+def TwoOddOccuring(arr, size):
+    xorof2 = arr[0]
+    x = 0
+    y = 0
+    setbit = 0
+    for i in range(1, size):
+        xorof2 = xorof2^arr[i]
+    setbit=xorof2 & ~(xorof2-1)
+    for i in range(size):
+        if(arr[i] & setbit):
+            x=x^arr[i]
+        else:
+            y=y^arr[i]
+    print("Two odd occuring elements:")
+arr = []
+n = int(input("Enter the element:"))
+while(n):
+    num = int(input("Enter element"))
+    arr.append(num)
+    n-=1
+TwoOddOccuring(arr, len(arr))
+
 
     
 
@@ -689,10 +736,6 @@ setOrnot(number, n)
 
 
     
-
-
-
-
 
 
 
