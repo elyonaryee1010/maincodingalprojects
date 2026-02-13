@@ -274,6 +274,18 @@ def reverse_bit(n):
 
 num = int(input("Enter you number:"))
 print("reversed number:", reverse_bits(num))
+#find power of 8
+n = int(input("Enter number: "))
+while n>1:
+    if n%8 != 0:
+        break
+    else:
+        n//=8
+        
+if n == 1:
+    print("Yes, this is a power of 8")
+else:
+    print("No, this isnt a power of 8")
                 
 
                 
