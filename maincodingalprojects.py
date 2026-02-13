@@ -712,6 +712,54 @@ while(n):
     n-=1
 TwoOddOccuring(arr, len(arr))
 
+##Activity-1 find the power of 2
+def power2(number):
+    if number==0:
+        return 0
+    if (number &(-(number-1))) == number:
+        return 1
+
+    return 0
+number = int(input("Enter a number:"))
+if power2(number):
+    print("Yes, its to the power of 2")
+else:
+    print("No")
+
+#activity-2 find the power of 4
+def powerof4(number):
+    count = 0
+    if number == 0:
+        return 0
+    while number>1:
+        number>>=1
+        count+=1
+    if count%2==0:
+        return 1
+    else:
+        return 0
+number = int(input("Enter numer"))
+if powerof4(number):
+    print("Yes, its a power of 4")
+else:
+    print("No, its not a power of4")
+
+#Log(n)Power
+def computerpower(x,y):
+    result=1
+    while(y>0):
+        if(y%2==0):
+            x=x*x
+        y>>=1
+    else:
+        result = result*x
+        y>>=1
+    return result
+x = int(input("x: "))
+y = int(input("y:"))
+
+print(computerpower(x,y))
+
 
     
 
