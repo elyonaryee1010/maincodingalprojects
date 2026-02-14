@@ -770,8 +770,8 @@ second_number = second_number - result
 
 first_number = result - first_number
 
-print(f"{first_number}")
-print(f"{second_number}")
+print(f"New First Number:",{first_number})
+print(f"New Second Number",{second_number}")
 
 #Dividewithoutdivide
 
