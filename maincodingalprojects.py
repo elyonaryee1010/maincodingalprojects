@@ -630,135 +630,171 @@
 
 #     count = 0 
 
-# while (n):
-#     count += 1
-#     n>>>==1
+# # while (n):
+# #     count += 1
+# #     n>>>==1
 
-# return count
-# num = int(input("Enter your number:"))
+# # return count
+# # num = int(input("Enter your number:"))
 
-# print("Total bits:", numberOfBits(number))
-#Number of Bits
-def numberOfBits(n):
-    zeros = 0
-    ones = 0
-    while(n):
-        if (n&1 == 1):
-            zeros += 1
-        else:
-            ones += 1
+# # print("Total bits:", numberOfBits(number))
+# #Number of Bits
+# def numberOfBits(n):
+#     zeros = 0
+#     ones = 0
+#     while(n):
+#         if (n&1 == 1):
+#             zeros += 1
+#         else:
+#             ones += 1
 
-    n>>=1
+#     n>>=1
 
-print(f"Number is {ones} number is {zeros}")
+# print(f"Number is {ones} number is {zeros}")
 
-numberOfBits(n)
+# numberOfBits(n)
 
-#Set or not?
-def setOrnot(number, n):
-    if number & (1<<(n-1)):
-        print("SET")
-    else:
-        print("NOT A SET")
+# #Set or not?
+# def setOrnot(number, n):
+#     if number & (1<<(n-1)):
+#         print("SET")
+#     else:
+#         print("NOT A SET")
 
-n = int(input("Enter number:"))
-number = int(input("Enter number"))
-setOrnot(number, n)
+# n = int(input("Enter number:"))
+# number = int(input("Enter number"))
+# setOrnot(number, n)
 
-#Activity-1
-def checkIfSame(number1, number2):
-    if((number1 ^ number2)!=0):
-        print("numbers are not the same")
-    else:
-        print("numbers are the same")
-number1 = int(input("Enter a number:"))
-num2 = int(input("Enter a number"))
-checkIfSame(number1, number 2)
+# #Activity-1
+# def checkIfSame(number1, number2):
+#     if((number1 ^ number2)!=0):
+#         print("numbers are not the same")
+#     else:
+#         print("numbers are the same")
+# number1 = int(input("Enter a number:"))
+# num2 = int(input("Enter a number"))
+# checkIfSame(number1, number 2)
 
-#Activity-2
-def oddOccuring(arr):
-    res = 0
-    for i in arr:
-        res = res^i
-        return res
-arr = []
-n= int(Input("Enter the size of your number"))
-while(n):
-    num= int(input("Enter the element:"))
-    arr.append(num)
-    n-=1
-print("Odd occuring element is", oddOccuring(arr))
+# #Activity-2
+# def oddOccuring(arr):
+#     res = 0
+#     for i in arr:
+#         res = res^i
+#         return res
+# arr = []
+# n= int(Input("Enter the size of your number"))
+# while(n):
+#     num= int(input("Enter the element:"))
+#     arr.append(num)
+#     n-=1
+# print("Odd occuring element is", oddOccuring(arr))
 
-#Activity-3
-def TwoOddOccuring(arr, size):
-    xorof2 = arr[0]
-    x = 0
-    y = 0
-    setbit = 0
-    for i in range(1, size):
-        xorof2 = xorof2^arr[i]
-    setbit=xorof2 & ~(xorof2-1)
-    for i in range(size):
-        if(arr[i] & setbit):
-            x=x^arr[i]
-        else:
-            y=y^arr[i]
-    print("Two odd occuring elements:")
-arr = []
-n = int(input("Enter the element:"))
-while(n):
-    num = int(input("Enter element"))
-    arr.append(num)
-    n-=1
-TwoOddOccuring(arr, len(arr))
+# #Activity-3
+# def TwoOddOccuring(arr, size):
+#     xorof2 = arr[0]
+#     x = 0
+#     y = 0
+#     setbit = 0
+#     for i in range(1, size):
+#         xorof2 = xorof2^arr[i]
+#     setbit=xorof2 & ~(xorof2-1)
+#     for i in range(size):
+#         if(arr[i] & setbit):
+#             x=x^arr[i]
+#         else:
+#             y=y^arr[i]
+#     print("Two odd occuring elements:")
+# arr = []
+# n = int(input("Enter the element:"))
+# while(n):
+#     num = int(input("Enter element"))
+#     arr.append(num)
+#     n-=1
+# TwoOddOccuring(arr, len(arr))
 
-##Activity-1 find the power of 2
-def power2(number):
-    if number==0:
-        return 0
-    if (number &(-(number-1))) == number:
-        return 1
+# ##Activity-1 find the power of 2
+# def power2(number):
+#     if number==0:
+#         return 0
+#     if (number &(-(number-1))) == number:
+#         return 1
 
-    return 0
-number = int(input("Enter a number:"))
-if power2(number):
-    print("Yes, its to the power of 2")
-else:
-    print("No")
+#     return 0
+# number = int(input("Enter a number:"))
+# if power2(number):
+#     print("Yes, its to the power of 2")
+# else:
+#     print("No")
 
-#activity-2 find the power of 4
-def powerof4(number):
-    count = 0
-    if number == 0:
-        return 0
-    while number>1:
-        number>>=1
-        count+=1
-    if count%2==0:
-        return 1
-    else:
-        return 0
-number = int(input("Enter numer"))
-if powerof4(number):
-    print("Yes, its a power of 4")
-else:
-    print("No, its not a power of4")
+# #activity-2 find the power of 4
+# def powerof4(number):
+#     count = 0
+#     if number == 0:
+#         return 0
+#     while number>1:
+#         number>>=1
+#         count+=1
+#     if count%2==0:
+#         return 1
+#     else:
+#         return 0
+# number = int(input("Enter numer"))
+# if powerof4(number):
+#     print("Yes, its a power of 4")
+# else:
+#     print("No, its not a power of4")
 
-#Log(n)Power
-def computerpower(x,y):
-    result=1
-    while(y>0):
-        if(y%2==0):
-            x=x*x
-        y>>=1
-    else:
-        result = result*x
-        y>>=1
-    return result
-x = int(input("x: "))
-y = int(input("y:"))
+# #Log(n)Power
+# def computerpower(x,y):
+#     result=1
+#     while(y>0):
+#         if(y%2==0):
+#             x=x*x
+#         y>>=1
+#     else:
+#         result = result*x
+#         y>>=1
+#     return result
+# x = int(input("x: "))
+# y = int(input("y:"))
 
-print(computerpower(x,y))
+# print(computerpower(x,y)
+
+#Swap2Numbers
+first_number = int(input("Enter first number:"))
+second_number = int(input("Enter last number:"))
+
+result = first_number + second_number
+
+second_number = second_number - result
+
+first_number = result - first_number
+
+print(f"{first_number}")
+print(f"{second_number}")
+
+#Dividewithoutdivide
+
+f_num = int(input("Enter number:"))
+l_num = int(input("Enter second number"))
+
+count = 0
+
+while f_num >= l_num:
+    f_num -= l_num
+    count+=
+
+print(count)
+
+    
+
+
+
+
+
+
+
+                   
 
 
     
