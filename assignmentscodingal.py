@@ -286,6 +286,18 @@ if n == 1:
     print("Yes, this is a power of 8")
 else:
     print("No, this isnt a power of 8")
+
+#count ones:
+
+n = int(input("Enter number:"))
+count = 0
+
+while n>0:
+    if n%2==1:
+        count +=1
+    n//=2
+
+print("Numer of ones:", count)
                 
 
                 
