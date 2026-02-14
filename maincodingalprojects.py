@@ -766,13 +766,12 @@ second_number = int(input("Enter last number:"))
 
 result = first_number + second_number
 
-second_number = second_number - result
+second_number =  result - second_number
 
-first_number = result - first_number
+first_number =  result - second_number
 
 print(f"New First Number:",{first_number})
-print(f"New Second Number",{second_number}")
-
+print(f"New Second Number:",{second_number})
 #Dividewithoutdivide
 
 f_num = int(input("Enter number:"))
@@ -782,9 +781,18 @@ count = 0
 
 while f_num >= l_num:
     f_num -= l_num
-    count+=
+    count+=1
 
 print(count)
+
+    
+
+
+
+
+
+
+
 
     
 
