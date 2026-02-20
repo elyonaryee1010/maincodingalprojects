@@ -766,12 +766,13 @@ second_number = int(input("Enter last number:"))
 
 result = first_number + second_number
 
-second_number =  result - second_number
+second_number = second_number - result
 
-first_number =  result - second_number
+first_number = result - first_number
 
 print(f"New First Number:",{first_number})
-print(f"New Second Number:",{second_number})
+print(f"New Second Number",{second_number}")
+
 #Dividewithoutdivide
 
 f_num = int(input("Enter number:"))
@@ -781,18 +782,45 @@ count = 0
 
 while f_num >= l_num:
     f_num -= l_num
-    count+=1
+    count+=
 
 print(count)
 
-    
+#ACTIVITY-1
+def printPower(set, SetSize):
+    PowerSetSize = (int) (math.pow(2, SetSize):
+    outer = 0;
+    inner = 0;
+    for outer in range(0, PowerSetSize):
+      for inner in range(0, SetSize):
+        if (outer &(1 << inner)):
+          print(set[inner], end="")
+       print("")
+
+    size = int(input("Enter the size of the set:"))
+    set = []
+    for i in range(0, size):
+        element = int(input("Enter the element:"))
+        set.append(element)
+    printPower(set, size)
 
 
+#Activity-2
+def flips(num1, num2):
+    flip = 0
+    while (num1 > 0 or num2 > 0):
+    t1 = num1 & 1
+    t2 = num2 & 1
+    if t1 != t2:
+        flip += 1
+    num1 >>=1
+    num2 >>= 1
+num1 = int(input("Enter first number:"))
+num2 = int(input("Enter second number:"))
+print("Number of flips needed:", flips(num1, num2))
 
 
-
-
-
+                          
 
     
 
