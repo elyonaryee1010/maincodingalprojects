@@ -298,6 +298,31 @@ while n>0:
     n//=2
 
 print("Numer of ones:", count)
+
+#allsubstring
+print("This code can only be used for 4 letter names. Eg. Anki ")
+first_letter = input("Enter next letter: ")
+second_letter = input("Enter next letter: ")
+third_letter = input("Enter next letter: ")
+fourth_letter = input("Enter next letter: ")
+
+
+print({first_letter})
+print({second_letter})
+print({first_letter, second_letter})
+print({third_letter})
+print({first_letter,third_letter})
+print({first_letter,second_letter,third_letter})
+print({fourth_letter})
+print({first_letter, fourth_letter})
+print({second_letter, fourth_letter})
+print({first_letter, third_letter, fourth_letter})
+print({second_letter, third_letter, fourth_letter})
+print({first_letter, third_letter, fourth_letter})
+
+
+
+
                 
 
                 
